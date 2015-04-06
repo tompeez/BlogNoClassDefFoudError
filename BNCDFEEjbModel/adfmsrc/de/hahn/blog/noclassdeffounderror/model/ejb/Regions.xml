@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.64.93" id="Regions" Package="de.hahn.blog.noclassdeffounderror.model.ejb"
+          BeanClass="de.hahn.blog.noclassdeffounderror.model.ejb.Regions" isJavaBased="true">
+  <Attribute Name="regionId" PrimaryKey="true" Type="java.lang.Long"/>
+  <Attribute Name="regionName" Type="java.lang.String"/>
+  <ConstructorMethod IsCollection="true" Type="de.hahn.blog.noclassdeffounderror.model.ejb.Regions"
+                     BeanClass="de.hahn.blog.noclassdeffounderror.model.ejb.Regions" id="Regions">
+    <ParameterInfo id="regionId" Type="java.lang.Long" isStructured="false"/>
+    <ParameterInfo id="regionName" Type="java.lang.String" isStructured="false"/>
+  </ConstructorMethod>
+  <ConstructorMethod IsCollection="true" Type="de.hahn.blog.noclassdeffounderror.model.ejb.Regions"
+                     BeanClass="de.hahn.blog.noclassdeffounderror.model.ejb.Regions" id="Regions"/>
+</JavaBean>

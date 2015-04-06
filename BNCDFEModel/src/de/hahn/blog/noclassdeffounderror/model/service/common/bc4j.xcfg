@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="de.hahn.blog.noclassdeffounderror.model.service.BNCDFEAppModule">
+      <AppModuleConfig name="BNCDFEAppModuleLocal" ApplicationName="de.hahn.blog.noclassdeffounderror.model.service.BNCDFEAppModule" DeployPlatform="LOCAL" jbo.project="de.hahn.blog.noclassdeffounderror.model.BNCDFEModel">
+         <Security AppModuleJndiName="de.hahn.blog.noclassdeffounderror.model.service.BNCDFEAppModule"/>
+         <Custom JDBCDataSource="java:comp/env/jdbc/HRConnDS"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="BNCDFEAppModuleShared" ApplicationName="de.hahn.blog.noclassdeffounderror.model.service.BNCDFEAppModule" DeployPlatform="LOCAL" jbo.project="de.hahn.blog.noclassdeffounderror.model.BNCDFEModel">
+         <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+         <Security AppModuleJndiName="de.hahn.blog.noclassdeffounderror.model.service.BNCDFEAppModule"/>
+         <Custom JDBCDataSource="java:comp/env/jdbc/HRConnDS"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>

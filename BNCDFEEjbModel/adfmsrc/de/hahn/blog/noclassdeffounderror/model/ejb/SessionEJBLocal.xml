@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.64.93" id="SessionEJBLocal" Package="de.hahn.blog.noclassdeffounderror.model.ejb"
+          BeanClass="de.hahn.blog.noclassdeffounderror.model.ejb.SessionEJBLocal" isJavaBased="true">
+  <AccessorAttribute id="regionsFindAll" IsCollection="true" BeanClass="de.hahn.blog.noclassdeffounderror.model.ejb.Regions"
+                     CollectionBeanClass="UpdateableCollection"/>
+  <MethodAccessor IsCollection="false" Type="de.hahn.blog.noclassdeffounderror.model.ejb.Regions"
+                  BeanClass="de.hahn.blog.noclassdeffounderror.model.ejb.Regions" id="persistRegions" ReturnNodeName="Regions">
+    <ParameterInfo id="regions" Type="de.hahn.blog.noclassdeffounderror.model.ejb.Regions" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="de.hahn.blog.noclassdeffounderror.model.ejb.Regions"
+                  BeanClass="de.hahn.blog.noclassdeffounderror.model.ejb.Regions" id="mergeRegions" ReturnNodeName="Regions">
+    <ParameterInfo id="regions" Type="de.hahn.blog.noclassdeffounderror.model.ejb.Regions" isStructured="true"/>
+  </MethodAccessor>
+  <MethodAccessor IsCollection="false" Type="void" id="removeRegions" ReturnNodeName="Return">
+    <ParameterInfo id="regions" Type="de.hahn.blog.noclassdeffounderror.model.ejb.Regions" isStructured="true"/>
+  </MethodAccessor>
+</JavaBean>

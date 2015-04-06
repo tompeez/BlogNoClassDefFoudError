@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE JboProject SYSTEM "jbo_03_01.dtd">
+<!---->
+<JboProject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="BNCDFEModel"
+  Version="11.1.1.64.93"
+  SeparateXMLFiles="true"
+  PackageName="de.hahn.blog.noclassdeffounderror.model">
+  <DesignTime>
+    <Attr Name="_jprName" Value="../../../../../../BNCDFEModel.jpr"/>
+    <Attr Name="_NamedConnection" Value="HRConn"/>
+    <Attr Name="_appModuleNames0" Value="de.hahn.blog.noclassdeffounderror.model.service.BNCDFEAppModule"/>
+  </DesignTime>
+  <Containee
+    Name="entities"
+    PackageName="de.hahn.blog.noclassdeffounderror.model.entities"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_EO" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="service"
+    PackageName="de.hahn.blog.noclassdeffounderror.model.service"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_AM" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="views"
+    PackageName="de.hahn.blog.noclassdeffounderror.model.views"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_VO" Value="true"/>
+    </DesignTime>
+  </Containee>
+</JboProject>

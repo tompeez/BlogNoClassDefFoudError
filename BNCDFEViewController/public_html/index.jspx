@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <f:view>
+    <af:document id="d1">
+      <af:messages id="m1"/>
+      <af:form id="f1">
+        <af:panelStretchLayout topHeight="50px" id="psl1">
+          <f:facet name="top">
+            <af:outputText value="Blog NoClassDefFoundError" id="ot1" inlineStyle="font-size:x-large;"/>
+          </f:facet>
+          <f:facet name="center">
+            <af:panelSplitter id="ps1" splitterPosition="341">
+              <f:facet name="first">
+                <af:table value="#{bindings.regionsFindAll.collectionModel}" var="row" rows="#{bindings.regionsFindAll.rangeSize}"
+                          emptyText="#{bindings.regionsFindAll.viewable ? 'No data to display.' : 'Access Denied.'}"
+                          fetchSize="#{bindings.regionsFindAll.rangeSize}" rowBandingInterval="0"
+                          selectedRowKeys="#{bindings.regionsFindAll.collectionModel.selectedRow}"
+                          selectionListener="#{bindings.regionsFindAll.collectionModel.makeCurrent}" rowSelection="single" id="t1">
+                  <af:column sortProperty="#{bindings.regionsFindAll.hints.regionId.name}" sortable="false"
+                             headerText="#{bindings.regionsFindAll.hints.regionId.label}" id="c2">
+                    <af:outputText value="#{row.regionId}" id="ot2">
+                      <af:convertNumber groupingUsed="false" pattern="#{bindings.regionsFindAll.hints.regionId.format}"/>
+                    </af:outputText>
+                  </af:column>
+                  <af:column sortProperty="#{bindings.regionsFindAll.hints.regionName.name}" sortable="false"
+                             headerText="#{bindings.regionsFindAll.hints.regionName.label}" id="c1">
+                    <af:outputText value="#{row.regionName}" id="ot3"/>
+                  </af:column>
+                </af:table>
+              </f:facet>
+              <f:facet name="second">
+                <af:table value="#{bindings.DepartmentsView1.collectionModel}" var="row" rows="#{bindings.DepartmentsView1.rangeSize}"
+                          emptyText="#{bindings.DepartmentsView1.viewable ? 'No data to display.' : 'Access Denied.'}"
+                          fetchSize="#{bindings.DepartmentsView1.rangeSize}" rowBandingInterval="0"
+                          selectedRowKeys="#{bindings.DepartmentsView1.collectionModel.selectedRow}"
+                          selectionListener="#{bindings.DepartmentsView1.collectionModel.makeCurrent}" rowSelection="single" id="t2">
+                  <af:column sortProperty="#{bindings.DepartmentsView1.hints.DepartmentId.name}" sortable="false"
+                             headerText="#{bindings.DepartmentsView1.hints.DepartmentId.label}" id="c6">
+                    <af:outputText value="#{row.DepartmentId}" id="ot5">
+                      <af:convertNumber groupingUsed="false" pattern="#{bindings.DepartmentsView1.hints.DepartmentId.format}"/>
+                    </af:outputText>
+                  </af:column>
+                  <af:column sortProperty="#{bindings.DepartmentsView1.hints.DepartmentName.name}" sortable="false"
+                             headerText="#{bindings.DepartmentsView1.hints.DepartmentName.label}" id="c5">
+                    <af:outputText value="#{row.DepartmentName}" id="ot7"/>
+                  </af:column>
+                  <af:column sortProperty="#{bindings.DepartmentsView1.hints.ManagerId.name}" sortable="false"
+                             headerText="#{bindings.DepartmentsView1.hints.ManagerId.label}" id="c4">
+                    <af:outputText value="#{row.ManagerId}" id="ot6">
+                      <af:convertNumber groupingUsed="false" pattern="#{bindings.DepartmentsView1.hints.ManagerId.format}"/>
+                    </af:outputText>
+                  </af:column>
+                  <af:column sortProperty="#{bindings.DepartmentsView1.hints.LocationId.name}" sortable="false"
+                             headerText="#{bindings.DepartmentsView1.hints.LocationId.label}" id="c3">
+                    <af:outputText value="#{row.LocationId}" id="ot4">
+                      <af:convertNumber groupingUsed="false" pattern="#{bindings.DepartmentsView1.hints.LocationId.format}"/>
+                    </af:outputText>
+                  </af:column>
+                </af:table>
+              </f:facet>
+            </af:panelSplitter>
+            <!-- id="af_one_column_header_stretched"  -->
+          </f:facet>
+        </af:panelStretchLayout>
+      </af:form>
+    </af:document>
+  </f:view>
+</jsp:root>

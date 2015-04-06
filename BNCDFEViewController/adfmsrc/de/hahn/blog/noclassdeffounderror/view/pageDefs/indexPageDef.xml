@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="11.1.1.64.93" id="indexPageDef" Package="de.hahn.blog.noclassdeffounderror.view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <iterator Binds="root" RangeSize="25" DataControl="SessionEJBLocal" id="SessionEJBLocalIterator"/>
+    <accessorIterator MasterBinding="SessionEJBLocalIterator" Binds="regionsFindAll" RangeSize="25" DataControl="SessionEJBLocal"
+                      BeanClass="de.hahn.blog.noclassdeffounderror.model.ejb.Regions" id="regionsFindAllIterator"/>
+    <iterator Binds="DepartmentsView1" RangeSize="25" DataControl="BNCDFEAppModuleDataControl" id="DepartmentsView1Iterator"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="regionsFindAllIterator" id="regionsFindAll">
+      <nodeDefinition DefName="de.hahn.blog.noclassdeffounderror.model.ejb.Regions" Name="regionsFindAll0">
+        <AttrNames>
+          <Item Value="regionId"/>
+          <Item Value="regionName"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <tree IterBinding="DepartmentsView1Iterator" id="DepartmentsView1">
+      <nodeDefinition DefName="de.hahn.blog.noclassdeffounderror.model.views.DepartmentsView" Name="DepartmentsView10">
+        <AttrNames>
+          <Item Value="DepartmentId"/>
+          <Item Value="DepartmentName"/>
+          <Item Value="ManagerId"/>
+          <Item Value="LocationId"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>

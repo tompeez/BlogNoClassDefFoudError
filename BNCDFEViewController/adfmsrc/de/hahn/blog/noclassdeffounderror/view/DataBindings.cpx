@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="11.1.1.64.93" id="DataBindings" SeparateXMLFiles="false"
+             Package="de.hahn.blog.noclassdeffounderror.view"
+             ClientType="Generic">
+  <pageMap>
+    <page path="/index.jspx" usageId="de_hahn_blog_noclassdeffounderror_view_indexPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="de_hahn_blog_noclassdeffounderror_view_indexPageDef" path="de.hahn.blog.noclassdeffounderror.view.pageDefs.indexPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <dc id="SessionEJBLocal" path="de.hahn.blog.noclassdeffounderror.model.ejb.SessionEJBLocal"/>
+    <BC4JDataControl id="BNCDFEAppModuleDataControl" Package="de.hahn.blog.noclassdeffounderror.model.service"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true" SupportsFindMode="true" SupportsRangesize="true"
+                     SupportsResetState="true" SupportsSortCollection="true" Configuration="BNCDFEAppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>
